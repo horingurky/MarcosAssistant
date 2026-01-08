@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MarcosAssistant v0.1</title>
+</head>
+<body>
+    <h2>MarcosAssistant v0.1</h2>
+    <input id="q" placeholder="Escribe aquí..." />
+    <button onclick="send()">Enviar</button>
+    <pre id="out"></pre>
+
+    <script>
+        async function send() {
+            const q = document.getElementById("q").value;
+            const res = await fetch(`/ask?q=${encodeURIComponent(q)}`);
+            const data = await res.json();
+            document.getElementById("out").textContent = data.response;
+        }
+    </script>
+</body>
+</html>

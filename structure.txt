@@ -1,0 +1,20 @@
+Estructura inicial
+
+MarcosAssistant/
+│
+├── server/
+│   ├── api.py
+│   └── static/
+│       └── index.html
+│
+├── core/
+│   ├── brain.py
+│   ├── tasks.py
+│   ├── reasoning.py
+│   └── python_help.py
+│
+├── data/
+│   ├── projects/
+│   └── notes/
+│
+└── config.yaml

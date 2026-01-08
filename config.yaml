@@ -1,0 +1,4 @@
+style: "respuestas claras, con pasos, tablas y ejemplos"
+data_paths:
+  notes: "data/notes"
+  projects: "data/projects"
